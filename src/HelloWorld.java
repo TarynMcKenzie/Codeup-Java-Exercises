@@ -159,8 +159,8 @@
 
 //                public class HelloWorld {
 //                    public static void main (String[] args){
-//                        double myNumber = 3.14;
-//                        System.out.print(myNumber);
+//                        float myFloatNumber = 3.14f;
+//                        System.out.print(myFloatNumber);
 //                    }
 //                }
 
@@ -189,7 +189,9 @@
 
 //                public class HelloWorld {
 //                    public static void main (String[] args){
-//                        double class;
+//                        class operation{
+//
+//                        };
 //                    }
 //                }
 
@@ -203,7 +205,7 @@
 //
 //                        String theNumberThree = "three";
 //                        Object o = theNumberThree;
-//                        int three = (int) o;
+//                        int three = (int) o; // runtime error
 //
 //                    }
 //                }
@@ -217,14 +219,15 @@
 //                public class HelloWorld {
 //                    public static void main (String[] args){
 //
-//                         int three = (int) "three"; //trying to cast as a string
+//                         int three = (int) "three"; //compiled time error
 //
 //                    }
 //                }
 
 //        TODO: What are the two different types of errors we are observing?
 
-            //implicit and explicit?
+            //Runtime errors --> can only be seen when run
+            //Compiled error --> can be seen when typing the code out
 
 //        TODO: Rewrite the following expressions using the relevant shorthand assignment operators:
 
@@ -253,3 +256,27 @@
 
                 // You run the risk of losing data because the cast is small than what you are trying to catch.
 
+
+
+// ________________BONUS_________________
+
+public class HelloWorld {
+    public static double preformIndicatedOperation011(String operation, double op1, double op2) {
+
+        double results; //Declare the results variable as a double
+
+        if (operation.equals("ADD")) { // Adding operation
+            results = op1 + op2;
+        } else if (operation.equals("SUB")) { //Subtracting operation
+            results = op1 - op2;
+        } else if (operation.equals("MUL")) { //Multiplication operation
+            results = op1 * op2;
+        } else if (operation.equals("DIV")) { //Division operation
+            results = op1 / op2;
+        } else{
+            results= 0.0;
+        }
+
+        return results;
+    }
+}
