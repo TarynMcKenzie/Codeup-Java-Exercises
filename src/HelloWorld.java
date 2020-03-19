@@ -273,10 +273,24 @@ public class HelloWorld {
             results = op1 * op2;
         } else if (operation.equals("DIV")) { //Division operation
             results = op1 / op2;
-        } else{
+        } else{ // If all else fails
             results= 0.0;
         }
 
         return results;
     }
+
+    public static int getNearestIntegerToRealSum013 (double firstRealAddend, double secondRealAddend){
+
+        int results = (int) firstRealAddend + (int) secondRealAddend; //cast the double types to integer types --> store them in the result variable
+
+        return results;
+
+        //OR
+
+        //return int Math.rint(firstRealAddend + secondRealAddend);
+
+    }
+
+
 }
