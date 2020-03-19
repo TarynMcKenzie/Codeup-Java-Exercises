@@ -25,3 +25,41 @@
         // print put each system print output on the same line
 
 
+
+// ________________BONUS_________________
+
+//  TODO: Build the project from the command line:
+
+//      TODO: Open a terminal and navigate to your project.
+
+            // taryn.mckenzie@Taryns-MacBook-Pro codeup-java-exercises % ls -ltr
+            // output:
+                // -rw-r--r--  1 taryn.mckenzie  staff  423 Mar 19 10:00 codeup-java-exercises.iml
+                //-rw-r--r--  1 taryn.mckenzie  staff   63 Mar 19 10:35 README.md
+                //drwxr-xr-x  3 taryn.mckenzie  staff   96 Mar 19 10:39 out
+                //drwxr-xr-x  3 taryn.mckenzie  staff   96 Mar 19 10:50 src
+
+//      TODO: Change directories into the src directory. You should see your HelloWorld.java file here.
+
+            // taryn.mckenzie@Taryns-MacBook-Pro codeup-java-exercises % cd src
+            // output:
+                //taryn.mckenzie@Taryns-MacBook-Pro src %
+
+//      TODO: Run the following command to compile your Java file
+
+            // taryn.mckenzie@Taryns-MacBook-Pro src % javac HelloWorld.java
+            // output:
+
+//      TODO: View the contents of the directory again. You should now see a file named HelloWorld.class (this is the compiled Java bytecode).
+
+            //taryn.mckenzie@Taryns-MacBook-Pro src % ls -ltr
+            // output:
+                //-rw-r--r--  1 taryn.mckenzie  staff  2205 Mar 19 10:53 HelloWorld.java
+                //-rw-r--r--  1 taryn.mckenzie  staff   424 Mar 19 10:54 HelloWorld.class
+
+
+//      TODO: Run your program with the following command
+
+            // taryn.mckenzie@Taryns-MacBook-Pro src % java HelloWorld
+            // output:
+                // Hello World!%
