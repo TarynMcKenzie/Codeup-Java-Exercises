@@ -68,31 +68,34 @@ public class ConsoleExercises {
         // TODO: Calculate the perimeter and area of Codeup's classrooms.
 
             // TODO: Prompt the user to enter values of length and width of a classroom at Codeup.
-
-                System.out.println("Please enter the length and width of the Codeup classroom");
-
             // TODO: Use the nextLine method to get user input and [parse](https://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html#parseInt(java.lang.String) the resulting string to a numeric type.
-
-                String classroomLengthWidth = input.nextLine();
-
-                int lengthWidth = Integer.parseInt(classroomLengthWidth);
 
                 //Assume that the rooms are perfect rectangles.
                 //Assume that the user will enter valid numeric data for length and width.
 
+                System.out.println("Please enter the length of the Codeup classroom");
+                String classroomLength = input.nextLine();
+
+                System.out.println("Please enter the width of the Codeup classroom");
+                String classroomWidth = input.nextLine();
+
+                int length = Integer.parseInt(classroomLength);
+                int width = Integer.parseInt(classroomWidth);
+
+
             // TODO: Display the area and perimeter of that classroom.
                 //The area of a rectangle is equal to the length times the width, and the perimeter of a rectangle is equal to 2 times the length plus 2 times the width.
 
-                System.out.println(lengthWidth * 2); //Area
-                System.out.println((lengthWidth * 2) * 2 ); //Perimeter
+                System.out.println(length * width); //Area
+                System.out.println((length * 2) + (width * 2) ); //Perimeter
 
 
         // TODO: Bonuses
 
             // TODO: Accept decimal entries.
 
-                double length = Integer.parseInt(input.next());
-                double width = Integer.parseInt(input.next());
+//                double length = Integer.parseInt(input.next());
+//                double width = Integer.parseInt(input.next());
 
             // TODO: Calculate the volume of the rooms in addition to the area and perimeter.
 
