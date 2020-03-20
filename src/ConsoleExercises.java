@@ -13,6 +13,9 @@ public class ConsoleExercises {
 
 //        System.out.printf("The value of pi is approximately %.2f. %n", pi);
 
+          //OR
+
+//        System.out.format("The value of pi is approximately %.2f. %n", pi); // Same output with a different method, formats strings
 
         // TODO: Prompt a user to enter a integer and store that value in an int variable using the nextInt method.
 
@@ -61,6 +64,48 @@ public class ConsoleExercises {
 //        String userSentenceNextLine = input.nextLine();
 //
 //        System.out.println(userSentenceNextLine);
+
+        // TODO: Calculate the perimeter and area of Codeup's classrooms.
+
+            // TODO: Prompt the user to enter values of length and width of a classroom at Codeup.
+
+                System.out.println("Please enter the length and width of the Codeup classroom");
+
+            // TODO: Use the nextLine method to get user input and [parse](https://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html#parseInt(java.lang.String) the resulting string to a numeric type.
+
+                String classroomLengthWidth = input.nextLine();
+
+                int lengthWidth = Integer.parseInt(classroomLengthWidth);
+
+                //Assume that the rooms are perfect rectangles.
+                //Assume that the user will enter valid numeric data for length and width.
+
+            // TODO: Display the area and perimeter of that classroom.
+                //The area of a rectangle is equal to the length times the width, and the perimeter of a rectangle is equal to 2 times the length plus 2 times the width.
+
+                System.out.println(lengthWidth * 2); //Area
+                System.out.println((lengthWidth * 2) * 2 ); //Perimeter
+
+
+        // TODO: Bonuses
+
+            // TODO: Accept decimal entries.
+
+                double length = Integer.parseInt(input.next());
+                double width = Integer.parseInt(input.next());
+
+            // TODO: Calculate the volume of the rooms in addition to the area and perimeter.
+
+
+            // The Scanner class can be told specifically what characters or pattern separates tokens in a piece of input with the useDelimiter method.
+
+            // TODO: Add the following line of code to your application after you have created a scanner (assuming the variable holding the Scanner is named scanner):
+
+            // scanner.useDelimiter("\n");
+
+            // How does this change the way your program operates?
+
+            // TODO: Rewrite your classroom program to use nextInt method. If you added the line of code above to your application, you should now have no trouble handling multiple pieces of user input.
 
     }
 }
