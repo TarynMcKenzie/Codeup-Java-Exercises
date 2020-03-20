@@ -1,5 +1,6 @@
 
-//import java.util.Scanner;
+import java.sql.SQLOutput; // ?
+import java.util.Scanner;
 
 public class consoleLec {
 
@@ -31,18 +32,21 @@ public class consoleLec {
         ****************************************/
 
             //TODO TOGETHER: Print a formatted string using the following... printf(formatString, data)
-
-
+//                System.out.printf(formatString, data);
 
             //TODO TOGETHER:
             // (1) Create a string variable
             // (2) print using printf() with placeholder %s
 
+//                String name = "Taryn";
+//
+//                System.out.printf("Hello %s%n", name); //The name value will be placed into the output
 
 
 
             // TODO: print using printf() with placeholder %S
 
+//                System.out.printf("Hello %S%n", name); //name variable will now be in all CAPS
 
 
             // >>>> Multiple Variables
@@ -53,12 +57,20 @@ public class consoleLec {
             // (2) Print using printf() and placeholders
             // note: d : decimal integer [byte, short, int, long]
 
+//                int three = 3;
+//                String petType = "dogs";
+//
+//                System.out.printf("I have %s %s%n", three, petType);
 
 
             //TODO:
             // (1) Create 2 variables - int and string
             // (2) Print using printf() and placeholders
 
+//                int days = 7;
+//                String time = "week";
+//
+//                System.out.printf("There are %s in a %s", days, time);
 
 
             // >>>> Currency
@@ -71,13 +83,12 @@ public class consoleLec {
             // (1) Create int variable currencyPennies
             // (2) Print variable using currency formatting
 
-
-
-
-
-
-
-
+//                int currencyPennies = 1000;
+//                double candyBar = 8;
+//
+//                System.out.printf("This candybar is going to cost $%.2f", candyBar);
+//
+//
             //note: in this example %.2f ==> f = floating point number, .2 represents how many decimals
 
 
@@ -90,23 +101,37 @@ public class consoleLec {
 
             //TODO: Add scanner input
 
+//                Scanner input = new Scanner(System.in);
 
 
             // >>>> .next() method
             // .next() captures each input usually signified by whitespace. The input is returned as a string
-
+//                System.out.println("Please enter your first and last name");
+//
+//                String firstName = input.next(); //capture the first input --> stop at the white space
+//                String lastName = input.next(); //Capture the element after the white space
+//
+//                System.out.printf("The user's name: %s %s%n", firstName, lastName);
 
 
             // >>>> .nextInt() method
             // .nextInt() captures the first valid int value
 
-
+//                System.out.println("How old are you?");
+//
+//                int age = input.nextInt();
+//
+//                System.out.printf("The user's age is: %s %n", age);
 
 
             // >>>> .nextLine() method
             // .nextLine() Returns the rest of the current line
 
-
+//                System.out.println("Please enter you favorite quote");
+//
+//                String quote = input.nextLine();
+//
+//                System.out.println(quote);
 
 
             /* ****************** NOTE ********************
