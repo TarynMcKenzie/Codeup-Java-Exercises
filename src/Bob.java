@@ -22,39 +22,36 @@ public class Bob {
 
         boolean bobContinue = true;
 
-        do {
+        while (bobContinue) {
 
-            System.out.println("Ask Bob a question."); //prompt the user
+            System.out.print("Ask Bob a question: "); //prompt the user
 
             String userInput = input.nextLine(); // get the user input --> store it in the variable userInput
 
 
             if (userInput.endsWith("?")) { //if the last character of userInput is equal to a ? -->
 
-                System.out.println("Sure.");
+                System.out.println("Sure.\n");
 
             } else if (userInput.endsWith("!")) { // if the last character of the userInput is equal to ! -->
 
-                System.out.println("Whoa, chill out!");
+                System.out.println("Whoa, chill out!\n");
 
             } else if (userInput.isBlank()) { //if the userInput is empty -->
 
-                System.out.println("Fine. Be that way!");
+                System.out.println("Fine. Be that way!\n");
 
             } else { // If none of the above are true -->
 
-                System.out.println("Whatever.");
+                System.out.println("Whatever.\n");
 
             }
 
 
-            if(!userInput.isEmpty()){ //if there is not user input --> bobContinue should be false to stop the loop
+        }
 
-                bobContinue = false;
-
-            }
-
-        } while( bobContinue );
+        //once finished
+        input.close();
 
 
     }
