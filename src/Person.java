@@ -20,6 +20,8 @@ public class Person {
         return String.format("%s says hello!", this.name);
     }
 
+
+
     // TODO: The class should have a constructor that accepts a String value and sets the person's name to the passed string.
 
     // the Person constructor
@@ -27,9 +29,13 @@ public class Person {
         this.name = name;
     }
 
+
     // TODO: Create a main method on the class that creates a new Person object and tests the above methods.
 
     public static void main(String[] args) {
+
+        // TODO: The following code blocks make use of the Person class from the previous exercise.
+        //       For each code block, think about what the code will output, then copy the code into IntelliJ and run it to see if it matches your expectations.
 
 //        Person person1 = new Person("John");
 //        Person person2 = new Person("John");
