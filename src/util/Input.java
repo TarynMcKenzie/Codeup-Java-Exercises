@@ -11,7 +11,7 @@ public class Input {
 
     private static Scanner scanner;
 
-    public Input(){ // New input class
+    public Input(){ // New input constructor
         scanner =  new Scanner(System.in); // new instance of the Scanner class
     }
 

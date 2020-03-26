@@ -1,14 +1,28 @@
 package shapes;
 
+import util.Input;
+
 public class CircleApp {
 
     // TODO: Inside of shapes, create a class named CircleApp that prompts the user for the radius of the circle using your Input class,
     //       creates a Circle object, and displays the circumference and area. (Note that you will need to import your Input class.)
-    //       For the value of pi, use the PI constant of the Math class.
-    //       The formulas for circumference and area:
-    // circumference = 2 x pi x radius
-    // area = pi x (radius ^ 2)
 
+    public static void main(String[] args) {
+
+
+        System.out.println("What is your radius?"); //prompt the user for their radius
+
+        Input input = new Input(); //new instance of input from the Input class
+
+        double userRadius = input.getDouble(1,10); //place the input value into a double variable
+
+        Circle circle1 = new Circle(userRadius); // create new instance of circle with the users input as radius
+
+        circle1.getArea(); // Take the input value and get its area
+
+        circle1.getCircumference(); // Take the input value and get its circumference
+
+    }
 
     // ---------- BONUS ------------
 

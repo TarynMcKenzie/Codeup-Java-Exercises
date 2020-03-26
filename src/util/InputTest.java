@@ -11,7 +11,7 @@ public class InputTest {
 
         input.getInt(1,10); // call the get int method from the input instance
 
-        input.getDouble(1,10); // cal the get double from the input instance
+        input.getDouble(1,10); // call the get double from the input instance
 
     }
 }
