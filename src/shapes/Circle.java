@@ -18,7 +18,7 @@ public class Circle {
 
     public Circle(double radius){ // New circle constructor
 
-        this.radius = radius; // get the radius?
+        this.radius = radius; // place the radius argument into the radius double
     }
 
     public double getArea(){
@@ -27,16 +27,16 @@ public class Circle {
 
         System.out.println("Area: " + area); // print the area
 
-        return area;
+        return area; // return the circumference
     }
 
     public double getCircumference(){
 
-        double circumference = 2 * Math.PI * radius;
+        double circumference = 2 * Math.PI * radius; //calculate the area and store value in circumference
 
-        System.out.println("Circumference: " + circumference);
+        System.out.println("Circumference: " + circumference); // print the circumference
 
-        return circumference;
+        return circumference; // return the circumference
     }
 
 

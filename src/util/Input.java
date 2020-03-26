@@ -12,7 +12,9 @@ public class Input {
     private static Scanner scanner;
 
     public Input(){ // New input constructor
-        scanner =  new Scanner(System.in); // new instance of the Scanner class
+
+        scanner =  new Scanner(System.in); // place the scanner input
+
     }
 
     // TODO: The yesNo method should return true if the user enters y, yes, or variants thereof, and false otherwise.
