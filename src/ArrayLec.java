@@ -46,31 +46,5 @@ public class ArrayLec {
         System.out.println(horns[randInt] + " is the best manufacturer"); // print out a random item from the horns array
 
 
-
-        /* ***************   ******** ********************* */
-        /* ********* **** THE ARRAYS CLASS **** *********** */
-        /* **************** 2D ARRAYS ********************* */
-        /* ***************   ******** ********************* */
-
-        // TODO: 1. Create an 'Instructor' class that stores an instructor's
-        //           -- firstName
-        //           -- lastName
-        //           -- brainWaveFrequency
-        //        -- Also, keep a count of the total number of instructors
-        //       2. Print to the console when an instructor has been created
-        //       3. Create Getters and Setters for names / brainwavefreq
-        //       4. Create a method to display instructor stats
-        //       5. Initialize an array full of instructor objects
-        //       6. Instantiate three instructors (casey,vivian,trant)
-        //       7. Set each instructor's BrainWaveFrequency
-        //       8. Add those instructors in the Instructor object array
-        //       9. Iterate through the Instructor object array, and display each instructor's stats
-        //       10. Create an array with only first names in it, and display it to the console
-        //       11. Sum the brainwave frequencies, and display the total to the console
-        //       12. Sum the brainwave frequencies, and display the total to the console
-        //       13. Create a 2D array, and print it to the console, in grid form
-
-
-
     }
 }
