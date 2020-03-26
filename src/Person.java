@@ -63,5 +63,9 @@ public class Person {
             //John
             //Jane
             //Jane
+
+        person1.sayHello();
+
+
     }
 }
