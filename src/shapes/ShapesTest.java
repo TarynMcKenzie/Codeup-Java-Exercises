@@ -5,6 +5,7 @@ public class ShapesTest {
     // TODO: Test your code by creating a new class, ShapesTest (also inside of shapes) with a main method. Inside the main method,
     public static void main(String[] args) {
 
+        //--------------TEST RECTANGLE------------------
         // TODO: create a variable of the type Rectangle named box1 and assign it a new instance of the Rectangle class with a width of 4 and a length of 5
         Rectangle box1 = new Rectangle(5, 4);
 
@@ -12,6 +13,9 @@ public class ShapesTest {
         box1.getPerimeter();
         box1.getArea();
 
+
+
+        //--------------TEST SQUARE------------------
         // TODO: create a variable of the type Rectangle named box2 and assign it a new instance of the Square class that has a side value of 5.
         Rectangle box2 = new Square(5);
 
