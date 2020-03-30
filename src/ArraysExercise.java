@@ -12,10 +12,13 @@ public class ArraysExercise {
     //       It should return an array whose length is 1 greater than the passed array, with the passed person object at the end of the array.
 
 
-    public static Person[] addPerson(Person[] persons, Person addedPerson) {
-        Person[] result = Arrays.copyOf(persons, persons.length + 1);
-        result[3] = new Person(addedPerson.getName());
-        return result;
+    public static Person[] addPerson(Person[] persons, Person addedPerson) { // New method that will return a  newperson added to the array
+
+        Person[] result = Arrays.copyOf(persons, persons.length + 1); // create a copy of the persons array --> add 1 to its items length
+
+        result[3] = new Person(addedPerson.getName()); // In the new item slot --> put the new person in array
+
+        return result; //return the new array copy
     }
 
 
@@ -46,21 +49,17 @@ public class ArraysExercise {
         persons[1] = vivian;
         persons[2] = trant;
 
-        addPerson(persons, casey);
-        addPerson(persons, vivian);
-        addPerson(persons, trant);
+
+        //--------------NEW PERSON (PERSONS)------------------
+        Person sam = new Person("Sam");
+        addPerson(persons, sam);
+
 
 
         //--------------PRINT EACH PERSON------------------
         for (Person eachPerson : persons) {
             System.out.println(eachPerson.sayHello());
         }
-
-        //--------------PRINT EACH PERSON (ADDPERSON)------------------
-        for (Person eachPerson : addPerson(persons, new Person("Sam"))) {
-            System.out.println(eachPerson.sayHello());
-        }
-
 
     }
 
