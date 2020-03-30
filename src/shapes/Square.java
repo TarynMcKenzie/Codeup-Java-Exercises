@@ -14,12 +14,25 @@ public class Square extends Rectangle {
     }
 
 
-
     //--------------OVERRIDING EXERCISE------------------
     // TODO: In the Square class, override the getArea and getPerimeter methods with the following definitions for a square
-        // perimeter = 4 x side
-        // area = side ^ 2
+    // perimeter = 4 x side
+    // area = side ^ 2
 
+//    @Override // Tell me if I am overriding
+    public int getArea(int side) {
+        int area = side ^ 2;
+        System.out.println("Area: " + area);
+        return area;
+    }
+
+//    @Override // Tell me if I am overriding
+    public int getPerimeter(int side) {
+        int perimeter =  4 * side;
+        System.out.println("Perimeter: " + perimeter);
+        return perimeter;
+    }
 
     // TODO: Re-run your ShapesTest class. How can you determine which getArea and getPerimeter methods are being called on each object?
+        //
 }
