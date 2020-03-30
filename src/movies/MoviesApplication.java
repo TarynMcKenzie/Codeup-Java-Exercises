@@ -31,6 +31,9 @@ public class MoviesApplication {
                 //Pulp Fiction -- drama
                 //...
 
+
+        Movie[] movieList = MoviesArray.findAll();
+
         //--------------USER PROMPT------------------
         System.out.println("What would you like to do?" +
                 "\t0 - exit\n" +
