@@ -45,7 +45,7 @@ public class Square extends Quadrilateral implements Measurable{
     //--------------CONSTRUCTOR METHOD (SQUARE)------------------
     public Square(double side) {
 
-        super(side, side);
+        super(side, side); // call the parent constructor --> set the side to the parents length and width expected arguments
 
     }
 
@@ -66,7 +66,7 @@ public class Square extends Quadrilateral implements Measurable{
     //--------------GET (PERIMETER)------------------
     @Override
     public double getPerimeter() { // Implementing (Overriding) getPerimeter from Measurable
-        double perimeter = 4 * side;
+        double perimeter = 4 * length;
         System.out.println("Perimeter: " + perimeter);
         return perimeter;
     }
@@ -74,7 +74,7 @@ public class Square extends Quadrilateral implements Measurable{
     //--------------GET (AREA)------------------
     @Override
     public double getArea() { // Implementing (Overriding) getArea from Measurable
-        double area = side ^ 2;
+        double area = Math.pow(length, 2);
         System.out.println("Area: " + area);
         return area;
     }

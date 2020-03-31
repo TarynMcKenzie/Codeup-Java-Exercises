@@ -18,7 +18,6 @@ public class ShapesTest {
 //
 //
 //        //--------------TEST SQUARE------------------
-//
 //        System.out.println("\nTest my Square math: ");
 //
 //        // TODO: create a variable of the type Rectangle named box2 and assign it a new instance of the Square class that has a side value of 5.
@@ -38,8 +37,18 @@ public class ShapesTest {
 
         Measurable myShape;
 
+        //--------------TEST SQUARE------------------
+        System.out.println("\nTest my Square math: ");
         myShape = new Square(3);
+        myShape.getArea();
+        myShape.getPerimeter();
+
+
+        //--------------TEST RECTANGLE------------------
+        System.out.println("\nTest my Rectangle math: ");
         myShape = new Rectangle(3, 5);
+        myShape.getArea();
+        myShape.getPerimeter();
 
     }
 }
