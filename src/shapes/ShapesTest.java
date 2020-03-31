@@ -50,5 +50,15 @@ public class ShapesTest {
         myShape.getArea();
         myShape.getPerimeter();
 
+
+        // TODO: Answer the following questions:
+
+        //       1. Why does the code fail to compile if you leave off the getPerimeter method in Rectangle?
+                    // Error:(3, 8) java: shapes.Rectangle is not abstract and does not override abstract method getPerimeter() in shapes.Measurable
+                    // The Measurable interface declares the getPerimeter method. It must be implemented (overwritten) to define its purpose.
+
+        //       2. What happens if you try to call the getLength or getWidth methods of the myShape variable? Why?
+                    // Cannot resolve symbol 'getLength' or Cannot resolve symbol 'getWidth'
+                    // Both are defined within an abstract class
     }
 }
