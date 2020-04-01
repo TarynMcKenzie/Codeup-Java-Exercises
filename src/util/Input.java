@@ -26,10 +26,11 @@ public class Input {
 
 
         if (scannerInput.toLowerCase().contains("y")){ // check the string input for a y
-            System.out.println("true");
+//            System.out.println("true");
             return true;
         } else { //check the string input for anything else, other than a y
-            System.out.println("false");
+//            System.out.println("false");
+            System.out.println("\nGoodbye, and have a wonderful day!");
             return false;
         }
 
@@ -71,4 +72,10 @@ public class Input {
     }
 
 
+    public String getString() {
+
+        String scannerInput = scanner.nextLine(); // place the scanner input into a string variable
+        return scannerInput;
+
+    }
 }

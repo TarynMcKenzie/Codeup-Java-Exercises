@@ -31,7 +31,7 @@ public class Student {
     //--------------GET (NAME)------------------
     public String getName() {
 
-        System.out.println(name);
+//        System.out.println("Name: " + name);
         return name; // returns the student's name
 
     }
@@ -51,7 +51,7 @@ public class Student {
         for (var i = 0; i < grades.size(); i++) total += grades.get(i);;
         int average = total / grades.size();
 
-        System.out.println( name + "'s grade average: " + average);
+//        System.out.println( name + "'s grade average: " + average);
 
         return average; // returns the average of the students grades
 
