@@ -2,7 +2,7 @@
 import java.sql.SQLOutput; // ?
 import java.util.Scanner;
 
-public class consoleLec {
+public class ConsoleLec {
 
         public static void main(String[] args) {
         /* ***************************************
