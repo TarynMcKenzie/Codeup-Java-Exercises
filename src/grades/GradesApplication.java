@@ -12,7 +12,7 @@ public class GradesApplication {
         // TODO: Inside the main method, create a HashMap named students.
         //  a. It should have keys that are strings that represent github usernames, and values that are Student objects.
 
-        HashMap<String, Student> students = new HashMap<>(); // Creates a new instance of HashMap for students
+        HashMap<String, Student> students = new HashMap<>(); // Creates a new instance (instantiate) of HashMap for students
 
         //  TODO: Create at least 4 student objects with at least 3 grades each, and add them to the map.
         // Be creative! Make up GitHub usernames and grades for your student objects.
@@ -116,7 +116,6 @@ public class GradesApplication {
 
 
         //--------------USER INFORMATION RETURN------------------
-
         do {
 
             System.out.println("\nWhat student would you like information on?"); // Initial user prompt -->
@@ -126,7 +125,7 @@ public class GradesApplication {
             Student target = students.get(userInput); // get the key/value based on the string input -->
 
 
-            if (userInput.equalsIgnoreCase(String.valueOf(userList))) { // If the user entered a valid response -->
+            if (students.containsKey(userInput)) { // If the user entered a valid response -->
 
                 System.out.println(
 
@@ -134,6 +133,8 @@ public class GradesApplication {
                                 "\nCurrent Average: " + target.getGradeAverage() + "\n"
 
                 ); // Give the user the information they requested
+
+                System.out.print("\nWould you like to continue?");
 
             } else { // If the user has NOT entered a valid response -->
 

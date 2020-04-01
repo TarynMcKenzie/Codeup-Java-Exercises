@@ -48,7 +48,8 @@ public class Student {
 
         int total = 0;
 
-        for (var i = 0; i < grades.size(); i++) total += grades.get(i);;
+        for (Integer grade : grades) total += grade;
+
         int average = total / grades.size();
 
 //        System.out.println( name + "'s grade average: " + average);

@@ -20,7 +20,7 @@ public class Input {
     // TODO: The yesNo method should return true if the user enters y, yes, or variants thereof, and false otherwise.
     public boolean yesNo(){
 
-        System.out.println("Enter yes or no"); // Prompt user
+        System.out.print("[Y/N]\n"); // Prompt user
 
         String scannerInput = scanner.nextLine(); // place the scanner input into a string variable
 
