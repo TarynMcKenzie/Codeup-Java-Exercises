@@ -146,6 +146,59 @@ public class GradesApplication {
 
 
 
+        /* ***************************************
+                        BONUS
+        ****************************************/
+
+        // TODO: 1. Display all of the student's grades in addition to the grade average.
+
+        // TODO: 2. Allow the user to view all of the grades for all of the students.
+
+        // TODO: 3. Modify your CLI to provide an option to view the overall class average.
+
+        // TODO: 4. Modify your CLI to provide an option to print a csv report of all the students.
+
+            // Example Output
+
+
+            // name,github_username,average
+            // Zach,zgulde,81.2
+            // Ryan,ryanorsinger,88.3
+            // Fernando,fmendozaro,90.4
+            //...
+
+        // TODO: 5. Add an attendance property to your Student objects. It should be a HashMap. The keys should be strings representing the date, in the format "2017-10-02", and the values should be Strings that are one of:
+
+            // "A": Absent
+            // "P": Present
+
+        // TODO: 6. Add a method named recordAttendance(String date, String value) that adds records to the HashMap this method should make sure value is an an acceptable string.
+
+        // TODO: 7. Create an instance method on your Student class to calculate a student's attendance percentage -- (Total Days - Absences) / Total Days.
+        // TODO: 8. Add the attendance information to the output of your command line interface, this should require only a small change.
+        // TODO: 9. Create an instance method on Student that finds the specific days a student was absent. This method should return a List of Strings, where each string is the date of the absence.
+
+
+
+        /* ***************************************
+                        BONUS
+        ****************************************/
+
+        // TODO: 1. Create a grocery list command line application. You will use your input class from previous exercises.
+
+            // a. A user should be prompted if they would like to create a grocery list.
+            // b. If they pick yes, they will be prompted if they would like to enter a new item.
+            // c. If the users picks yes, they should be given the following three prompts:
+                // 1. Given an ordered list of grocery categories to choose from, select the category.
+                // 2. Enter name of the item.
+                // 3.  Enter how many of the item.
+            // d. The user will then be given the choice to finalize the list or add an additional item.
+            // e. Once the user finalizes the list, they will be presented with a complete list organized alphabetically and grouped by category, and including quantity.
+            // f. For an extra bonus, allow users to filter the results by only one category of items at a time.
+            // g. For a super gold star bonus, allow users to edit the list items.
+
+        // Consider before coding how the data should be organized. Using ArrayLists and HashMaps will be helpful.
+
     }
 
 }
