@@ -58,27 +58,27 @@ public class Input {
     public int getInt(int min, int max) {
 
         int value = 0; // Initialize the value
-        int scannerInput;
+        String scannerInput; // A variable to store the user input
 
+        System.out.println("Enter a number between 1 and 10: "); // Prompt the user
+        scannerInput = scanner.nextLine(); // Get the users response to prompt into the scannerInput variable
 
         try { // If the input passes -->
 
-            while (value < min || value > max) { //if value is less than the min param and the value is greater than the max param -->
+            value = Integer.parseInt(scannerInput); //parse the input --> store in value variable
 
-                System.out.println("Enter a number between 1 and 10: ");
-                scannerInput = scanner.nextInt(); // place the scanner input into a int variable (nextInt will throw InputMismatchException if not int)
-                value = scannerInput; // replace the value with the user input.
+        } catch (Exception exception) { // If the input fails -->
 
-            }
-
-        } catch (InputMismatchException exception) { // If the input fails -->
-
-            exception = new InputMismatchException("An int data type was expected, but not received.");
-            System.out.println("This is not an integer");//Print if not an integer
-            throw exception;
+            exception.printStackTrace(); // Display the errors (red text in console)
+            System.out.println("This is not an integer");// Print if not an integer
+            value = getInt(min, max); // Set the value to recursively call this method
 
         }
 
+        if (value < min || value > max) { // If the min and max are within the bounds -->
+
+            value = getInt(min,max); //parse the input --> store in value variable
+        }
 
         return value;
     }
@@ -88,14 +88,25 @@ public class Input {
     public double getDouble(double min, double max) {
 
         double value = 0; // Initialize the value
+        String scannerInput; // A variable to store the user input
 
-        while (value < min || value > max) { //if value is less than the min param and the value is greater than the max param -->
+        System.out.println("Enter a number between 1 and 10: "); // Prompt the user
+        scannerInput = scanner.nextLine(); // Get the users response to prompt into the scannerInput variable
 
-            System.out.println("Enter a decimal number between 1 and 10: ");
+        try { // If the input passes -->
 
-            double scannerInput = scanner.nextDouble(); // place the scanner input into a int variable
+                value = Integer.parseInt(scannerInput); //parse the input --> store in value variable
 
-            value = scannerInput; // replace the value with the user input.
+        } catch (Exception exception) { // If the input fails -->
+
+            exception.printStackTrace(); // Display the errors (red text in console)
+            System.out.println("This is not an integer");//Print if not an integer
+            value = getDouble(min, max); // Set the value to recursively call this method
+
+        }
+        if (value <= min || value >= max) { // If the min and max are within the bounds -->
+
+            value = getDouble(min,max); //parse the input --> store in value variable
         }
 
         return value;
@@ -106,8 +117,6 @@ public class Input {
     public String getString() {
 
         String scannerInput = scanner.nextLine(); // place the scanner input into a string variable
-        Integer.valueOf(scannerInput);
-        Double.valueOf(scannerInput);
         return scannerInput;
 
     }
